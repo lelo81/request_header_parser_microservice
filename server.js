@@ -3,7 +3,11 @@
 var express = require('express');
 
 var app = express();
+var favicon = require('serve-favicon');
+var path = require('path');
 require('dotenv').load();
+
+app.use(favicon(__dirname + '/public/img/clementine_150.png'));
 
 app.enable('trust proxy');
 
@@ -20,6 +24,13 @@ app.get('/api/whoami/', function(req, res) {
   response.software = req.get('User-Agent').split('(')[1].split(')')[0];
 
   res.end(JSON.stringify(response));
+});
+
+
+app.get('*', function(req, res) {
+
+    res.sendFile(path.join(__dirname, 'public' + '/index.html'));
+  
 });
 
 var port = process.env.PORT || 8080;
