@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/lelo81/request_header_parser_microservice.git"
   },
-  "homepage": "http://www.clementinejs.com/",
+  "homepage": "https://request-header-parser-microsvc.herokuapp.com",
   "bugs": "https://github.com/lelo81/request_header_parser_microservice.git",
   "scripts": {
   "start": "node server.js"

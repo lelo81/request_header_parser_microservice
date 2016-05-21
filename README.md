@@ -1,1 +1,1 @@
-https://request-header-parser-microsvc.herokuapp.com/api/whoami
+Run https://request-header-parser-microsvc.herokuapp.com/api/whoami to test it.
