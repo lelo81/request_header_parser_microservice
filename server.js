@@ -5,7 +5,6 @@ var express = require('express');
 var app = express();
 var favicon = require('serve-favicon');
 var path = require('path');
-require('dotenv').load();
 
 app.use(favicon(__dirname + '/public/img/clementine_150.png'));
 
